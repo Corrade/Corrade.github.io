@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+
+/*
+Optical size
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap');
+*/
+
+/* Must support screens of width down to 360px */
+
+html {
+    font-family: "Source Serif 4", serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4em;
+    letter-spacing: 0em;
+    text-transform: none;
+    text-overflow: clip;
+    color: var(--black);
+    background-color: var(--white);
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+header.portfolio {
+    display: flex;
+    justify-content: center;
+    padding: 1.5vmax 2vmax;
+}
+
+.icons {
+    position: fixed;
+    top: 1vmax;
+    right: 2vmax;
+    z-index: 999;
+}
+
+div.indent {
+    margin-left: 1vmax;
+}
+
+.tag {
+    margin-left: 6px;
+}
+
+/* Blocks ___________________________________________________________________*/
+
+div.block, div.subblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.block {
+    width: 100%;
+    margin: 7vmax 0 12vmax 0;
+}
+
+div.subblock {
+    width: calc(100% - 35px);
+    margin-bottom: 7vmax;
+    max-width: max(60vmax, 1100px);
+}
+
+div.subblock.wide {
+    max-width: max(80vmax, 1350px);
+}
+
+div.subblock.narrow {
+    max-width: 700px;
+}
+
+div.subblock:last-child {
+    margin-bottom: 0;
+}
+
+.lightgreybg {
+    background: var(--lightgrey);
+}
+
+.whitebg {
+    background: var(--white);
+}
+
+/* Grids ____________________________________________________________________*/
+
+.grid-game-jams, .grid-illustration, .grid-krunker  {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-auto-rows: max-content;
+    grid-gap: 0;
+    justify-items: center;
+    justify-content: center;
+}
+
+.grid-game-jams {
+    grid-template-columns: repeat(auto-fit, min(100%, 315px));
+}
+
+.grid-illustration {
+    grid-template-columns: repeat(auto-fit, min(100%, 500px));
+}
+
+.grid-krunker {
+    grid-template-columns: repeat(auto-fit, min(100%, 700px));
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Text _____________________________________________________________________*/
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    line-height: 2.5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    margin-bottom: 4vmax;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+p, ul, li {
+    line-height: 1.9em;
+    font-weight: 300;
+}
+
+p.p1 {
+    font-size: 1.5rem;
+}
+
+p.p2 {
+    font-size: 1.2rem;
+}
+
+p.p3 {
+    font-size: 1rem;
+}
+
+.fineprint {
+    font-size: 0.8rem !important;
+    font-style: italic;
+}
+
+.caption > p {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Images ___________________________________________________________________*/
+
+/*
+If we allow an image to fill the screen width and then add padding or a margin,
+the element will overflow.
+
+The solution is to wrap the image in a frame that applies padding.
+
+Perform image sizing by applying the sizing to the frame.
+*/
+
+img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+div.frame {
+    padding: 5px;
+}
+
+div.frame.illustration {
+    height: 100%;
+}
+
+div.frame.illustration > img {
+    height: 100%;
+}
+
+div.frame.has-link {
+    position: relative; /* Absolute-positioned children will be relative to this */
+    display: inline-block;
+}
+
+div.frame.has-link::after {
+    display: block;
+    position: absolute;
+    content: "\1F517";
+    background-color: white;
+    top: 8px;
+    right: 8px;
+    padding: 4px;
+    opacity: 0.8;
+    scale: 0.8;
+    border-radius: 4px;
+    pointer-events: none;
+    z-index: 1;
+}

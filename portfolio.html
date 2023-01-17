@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="common_styles.css">
+        <link rel="stylesheet" type="text/css" href="portfolio_styles.css">
+    </head>
+    <body>
+        <header class="portfolio lightgreybg">
+            <h1>Matthew Li</h1>
+        </header>
+
+        <div class="icons center">
+            <div>
+                <div class="frame" style="width: 24px; height: 24px;">
+                    <a href="https://github.com/Corrade">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
+                    </a>
+                </div>
+            </div>
+            <div class="indent">
+                <div class="frame" style="width: 24px; height: 24px;">
+                    <a href="https://www.linkedin.com/in/matthew-li-corrade">
+                        <img src="http://cdn.onlinewebfonts.com/svg/img_39059.png"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center whitebg">
+            <div class="block whitebg">
+                <h2>Software Engineering</h2>
+
+                <div class="subblock">
+                    <h4>R&D Intern at VMware</br>Feb. 2022 - Jul. 2022 (6 months)</h4>
+
+                    <div class="columns padding">
+                        <div class="frame" style="min-width: 300px;">
+                            <img src="./portfolio_assets/vmware_imager.png"/>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Contributed to the frontend of <a href ="https://flings.vmware.com/imager#contributors">Imager</a>, a tool for creating virtual machines (VMs) from scratch. Imager entered the top half of VMware's most downloaded experimental tools within months of release. <span class="tag">Angular</span> <span class="tag">TypeScript</span></li>
+                                <li>Worked on the full stack of tools for packaging VMs as part of a project for streamlining the distribution and management of corporate VMs. <span class="tag">C#</span> <span class="tag">.NET</span> <span class="tag">ASP.NET</span> <span class="tag">Angular</span> <span class="tag">TypeScript</span></li>
+                                <li>Followed the agile methodology in a small team working hybrid. <span class="tag">Jira</span> <span class="tag">Bamboo</span> <span class="tag">Git</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="center lightgreybg">
+            <div class="block lightgreybg">
+                <h2>
+                    Netcode
+                    <p class="p3">
+                        Programming multiplayer/online game systems
+                    </p>
+                </h2>
+
+                <div class="subblock narrow">
+                    <h4>P2P Deterministic Lockstep</h4>
+
+                    <ul>
+                        <li>Created a stripped-down clone of <a href="https://store.steampowered.com/app/244730/Divekick/">Divekick</a>, a minimalistic fighting game</li>
+                        <li>Implemented the deterministic lockstep networking model</li>
+                        <li>Adopted a peer-to-peer architecture</li>
+                        <li>Applied both reliable and unreliable channels (TCP/UDP)</li>
+                        <li>Simulated packet delay and packet loss</li>
+                        <li>Handled serialisation and deserialisation</li>
+                        <li>Networked the following mechanics: 2D movement and melee attacks (hitscan volumes)</li>
+                    </ul>
+                </div>
+
+                <div class="subblock narrow">
+                    <p class="p3 fineprint">
+                        Further work in progress
+                    </p>
+                </div>
+
+                <!--
+                <div class="subblock narrow">
+                    <h4>P2P Rollback</h4>
+
+                    <ul>
+                        <li>Extended on the deterministic lockstep project</li>
+                        <li>Implemented client-side prediction using rollback</li>
+                        <li>Implemented input extrapolation (dead reckoning)</li>
+                    </ul>
+                </div>
+
+                <div class="subblock narrow">
+                    <h4>C/S Quake/Source-style Snapshots</h4>
+
+                    <ul>
+                        <li>Created a simple free-for-all arena first-person shooter</li>
+                        <li>Implemented the snapshots networking model introduced by <a href="https://en.wikipedia.org/wiki/Quake_(series)">Quake</a> and prominently employed by the <a href="https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking">Source engine</a></li>
+                        <ul>
+                            <li>Adopted a client-server architecture</li>
+                            <li>Implemented client-side prediction using rollback</li>
+                            <li>Combined entity extrapolation (dead reckoning) with entity interpolation</li>
+                            <li>Implemented tick synchronisation</li>
+                            <li>Implemented lag compensation (favor-the-shooter ruling)</li>
+                            <li>Implemented delta compression</li>
+                        </ul>
+                        <li>Networked the following mechanics: 3D movement, hitscan and projectiles</li>
+                        <li>Implemented an in-game network diagnostics UI</li>
+                        <li>Smoothly handled late joins, disconnects and reconnects</li>
+                        <li>Deployed the server on an AWS EC2 instance</li>
+                    </ul>
+                </div>
+                -->
+
+            </div>
+        </div>
+
+        <div class="center whitebg">
+            <div class="block whitebg">
+                <h2>Generalist Game Development</h2>
+
+                <div class="subblock wide">
+                    <h4>Bachelor's Thesis</h4>
+
+                    <div class="columns padding">
+                        <div class="frame" style="min-width: 300px;">
+                            <img src="./portfolio_assets/thesis.gif"/>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Compared four archetypes of voice command interfaces commonly seen in first-person shooters: non-nested wheel, nested wheel (shown on the left), non-nested list, and nested list</li>
+                                <li>Developed a 3D first-person shooter (design, programming, art, audio) <span class="tag">C#</span> <span class="tag">Unity</span> <span class="tag">Blender</span> <span class="tag">Photoshop</span> <span class="tag">Audacity</span></li>
+                                <li>Deployed a HTTPS server for telemetry <span class="tag">Python</span> <span class="tag">AWS (EC2)</span></li>
+                                <li>Conducted online playtesting <span class="tag">Amazon Mechanical Turk</span></li>
+                                <li>Performed a statistical analysis <span class="tag">Python</span></li></li>
+                                <li class="fineprint">In case the reader is interested, I concluded the following. Nested interfaces had a steeper learning curve than their non-nested counterparts. This was expected. However, I didn't find many significant absolute differences in performance (speed, accuracy, effect on gameplay). This may have been a fault of my experimental setup. However, if not, then my results suggest that designers should employ nested interfaces because they offer extra voice commands without notable downsides.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subblock wide">
+                    <h4>Game Jams</h4>
+
+                    <div class="grid-game-jams">
+                        <div class="grid-item">
+                            <div class="frame has-link">
+                                <a href="https://corrade.itch.io/flighty">
+                                    <img src="./portfolio_assets/game_jams/flighty.png"/>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Shmup - Solo (code, art, audio)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="frame has-link">
+                                <a href="https://ldjam.com/events/ludum-dare/45/flourish">
+                                    <img src="./portfolio_assets/game_jams/flourish.png"/>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Arcade - Solo (code, art, audio)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="frame has-link">
+                                <a href="https://corrade.itch.io/thereturn">
+                                    <img src="./portfolio_assets/game_jams/the_return.png"/>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Point-and-click - Solo (code, art)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="frame has-link">
+                                <a href="https://corrade.itch.io/bait-ball">
+                                    <img src="./portfolio_assets/game_jams/bait_ball.png"/>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Arcade - Solo (code, art)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="frame has-link">
+                                <a href="https://corrade.itch.io/snapshots-of-styx">
+                                    <img src="./portfolio_assets/game_jams/snapshots_of_styx.png"/>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Arcade - Solo (code, art, audio)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="frame has-link">
+                                <a href="https://corrade.itch.io/slot-machine">
+                                    <img src="./portfolio_assets/game_jams/slot_machine.png"/>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    RPG - Solo (code, art)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="frame has-link">
+                                <a href="https://corrade.itch.io/pickpocket-noir">
+                                    <img src="./portfolio_assets/game_jams/pickpocket_noir.png"/>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Stealth - Art
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="frame has-link">
+                                <a href="https://corrade.itch.io/kaflydoscope">
+                                    <img src="./portfolio_assets/game_jams/kaflydoscope.png"/>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Bullet hell - Solo (code, art)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subblock narrow">
+                    <h4>Community Content</h4>
+
+                    <div class="columns">
+                        <div style="min-width: 300px;">
+                            <div class="frame">
+                                <img src="./portfolio_assets/community_content/slide_daydream.jpg"/>
+                            </div>
+                            <div class="frame has-link">
+                                <a href="https://www.youtube.com/watch?v=8rSgaic0RfE">
+                                    <img src="./portfolio_assets/community_content/slide_daydream.gif"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="min-width: 300px;">
+                            <div class="frame">
+                                <img src="./portfolio_assets/community_content/slide_moonlight.png"/>
+                            </div>
+                            <div class="frame has-link">
+                                <a href="https://www.youtube.com/watch?v=GfEiozV65Jw">
+                                    <img src="./portfolio_assets/community_content/slide_moonlight.gif"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caption">
+                        <p class="p3">
+                            Maps for <a href="https://krunker.io/">Krunker</a> - played over 900,000 times
+                        </p>
+                        <p class="p3">
+                            Movement training maps for competitive players. Arguably pioneered this map genre within Krunker. Inspired by jump/surf maps from Team Fortress 2. Wrote a level design document <a href="https://github.com/Corrade/krunker-maps/tree/master/guide">here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="center lightgreybg">
+            <div class="block wide lightgreybg">
+                <h2>Amateur Illustration</h2>
+
+                <div class="subblock">
+                    <div class="grid-illustration">
+                        <div class="grid-item">
+                            <div class="frame illustration">
+                                <img src="./portfolio_assets/illustration/papulatus.jpg"/>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Fanart for <a href="https://maplestory.nexon.net/">MapleStory</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="frame illustration">
+                                <img src="./portfolio_assets/illustration/drifting.png"/>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Hobby illustration
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="frame illustration">
+                                <img src="./portfolio_assets/illustration/peacock_feather.png"/>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Hobby illustration
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="frame illustration">
+                                <img src="./portfolio_assets/illustration/hall.png"/>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Entry for a college charity art auction
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="frame illustration">
+                                <img src="./portfolio_assets/illustration/surup_2500px_2500px.png"/>
+                            </div>
+                            <div class="caption">
+                                <p class="p3">
+                                    Cover art for track <a href="https://soundcloud.com/user-54298815/to-kingdom-come">Kingdom Come</a> by Surup Thathachar
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
