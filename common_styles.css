@@ -58,6 +58,10 @@ div.column-left {
     border-right: 1px black solid;
 }
 
+div.allow-column-split-for-mobile {
+    min-width: 300px;
+}
+
 p.pagebreak {
     page-break-after: always;
 }

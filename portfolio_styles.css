@@ -26,9 +26,11 @@ body {
 }
 
 header.portfolio {
-    display: flex;
-    justify-content: center;
     padding: 1.5vmax 2vmax;
+}
+
+footer.portfolio {
+    padding: 0 2vmax 1vmax 2vmax;
 }
 
 .icons {
@@ -61,7 +63,7 @@ div.block {
 
 div.subblock {
     width: calc(100% - 35px);
-    margin-bottom: 7vmax;
+    margin-bottom: 8vmax;
     max-width: max(60vmax, 1100px);
 }
 
@@ -169,6 +171,10 @@ p.p3 {
     padding-top: 0;
 }
 
+.footer-text {
+    text-align: center;
+}
+
 /* Images ___________________________________________________________________*/
 
 /*
@@ -190,6 +196,11 @@ img {
 
 div.frame {
     padding: 5px;
+}
+
+div.frame.icon {
+    width: 24px;
+    height: 24px;
 }
 
 div.frame.illustration {
