@@ -52,12 +52,6 @@ div.columns.padding > * {
     padding-right: 1vmax;
 }
 
-div.column-left {
-    padding-right: 2vw;
-    margin-right: 2vw;
-    border-right: 1px black solid;
-}
-
 div.allow-column-split-for-mobile {
     min-width: 300px;
 }
