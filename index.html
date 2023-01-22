@@ -29,6 +29,13 @@
             </div>
             <div class="indent">
                 <div class="frame icon">
+                    <a href="./assets/resume_matthew_li.pdf">
+                        <img src="https://img.icons8.com/ios-glyphs/512/resume.png"/>
+                    </a>
+                </div>
+            </div>
+            <div class="indent">
+                <div class="frame icon">
                     <a href="mailto:matthew.li055@gmail.com">
                         <img src="https://img.icons8.com/material-outlined/512/filled-message.png"/>
                     </a>
@@ -74,21 +81,41 @@
                 <h2>
                     Netcode
                     <p class="p3">
-                        Programming multiplayer/online game systems
+                        Multiplayer/online game systems
+                        <br>
+                        (Subcategory of realtime distributed systems)
                     </p>
                 </h2>
 
                 <div class="subblock narrow">
                     <h4>P2P Deterministic Lockstep</h4>
 
+                    <div class="frame" style="margin-bottom: 1vmax;">
+                        <img src="./assets/lockstep.gif"/>
+                    </div>
+
+                    <div class="caption">
+                        <p class="p3">
+                            Demo with an input delay of 6 ticks, artificial latency of 25 ms (50ms ping) and artificial packet loss of 5%. Synchronisation is achieved. Network conditions weren't turbulent enough to cause freezing/locking.
+                        </p>
+                    </div>
+
+                    <div class="center" style="margin-bottom: 2vmax;">
+                        <span class="tag">C#</span> <span class="tag">Unity</span> <span class="tag">DarkRift 2</span>
+                    </div>
+
                     <ul>
-                        <li>Created a stripped-down clone of <a href="https://store.steampowered.com/app/244730/Divekick/">Divekick</a>, a minimalistic fighting game <span class="tag">C#</span> <span class="tag">Unity</span> <span class="tag">DarkRift 2</span></li>
+                        <li>Created a stripped-down clone of <a href="https://store.steampowered.com/app/244730/Divekick/">Divekick</a>, a minimalistic fighting game</li>
                         <li>Implemented the deterministic lockstep networking model</li>
                         <li>Adopted a peer-to-peer architecture</li>
-                        <li>Applied both reliable and unreliable channels (TCP/UDP)</li>
-                        <li>Simulated packet delay and packet loss</li>
+                        <li>Utilised both reliable and unreliable channels (TCP/UDP)</li>
                         <li>Handled serialisation and deserialisation</li>
+                        <li>Simulated latency and packet loss</li>
                         <li>Networked the following mechanics: 2D movement and melee attacks (hitscan volumes)</li>
+                        <!--
+                        <li>Click <a href="https://github.com/Corrade/netcode-lockstep">here</a> to view a detailed README in the GitHub repository</li>
+                        -->
+                        <li class="fineprint">I used <a href="https://www.darkriftnetworking.com/">DarkRift 2</a>, which is an open-source network messaging library for Unity. For comparison, here are some networking technologies in increasing order of abstraction: raw sockets, DarkRift 2, Mirror, Photon.</li>
                     </ul>
                 </div>
 
