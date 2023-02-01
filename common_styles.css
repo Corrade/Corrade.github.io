@@ -56,6 +56,15 @@ div.allow-column-split-for-mobile {
     min-width: 300px;
 }
 
+div.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.skills > * {
+    margin: 10px 5px 0 5px;
+}
+
 p.pagebreak {
     page-break-after: always;
 }
